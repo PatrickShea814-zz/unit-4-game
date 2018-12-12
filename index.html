@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Tangerine:700" rel="stylesheet">
+
+    <title>Crystal Quest</title>
+</head>
+
+<body>
+    <audio id="my_audio" controls preload="auto">
+        <source src="assets/images/Zeldalullaby.mp3" type="audio/mpeg" />
+    </audio>
+    <header class="container">
+        <div class="row justify-content-center">
+            <h1 class='text-center dream'>Crystal Quest</h1>
+
+        </div>
+    </header>
+    <div class="jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>The crystal trolls will choose a number at random at the start of the game.</h4>
+
+                    <h4>You will be presented with 4 crystals that each represent an unseen amount of points.</h4>
+
+                    <h4>Clicking each crystal will reveal their worth, but with each click points will be added to your
+                        total score.</h4>
+
+                    <h4>Match your total score to the random number to defeat the trolls. If your total score exceeds
+                        the
+                        random number you lose.</h4>
+
+                    <h4>At the start of each game, the crystals will be assigned a new amount of points.</h4>
+                </div>
+                <div class="col-md-6">
+                    <div class="container">
+                        <div class="row stats target">
+                            <div class="col-md-6">
+                                <h3>Target Number: </h3>
+                            </div>
+                            <div class="col-md-6">
+                                <h3 id="randNumber"></h3>
+                            </div>
+
+                        </div>
+                        <div class="row stats">
+                            <div class="col-md-6">
+                                <h3>Points Added:</h3>
+                            </div>
+                            <div class="col-md-6">
+                                <h3 id="pointsAdded"></h3>
+                            </div>
+
+                        </div>
+                        <div class="row stats total">
+                            <div class="col-md-6">
+                                <h3>Current Total:</h3>
+                            </div>
+                            <div class="col-md-6">
+                                <h3 id="pointTotal"></h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 wins">
+                                <h3>Wins:</h3>
+                            </div>
+                            <div class="col-md-6 losses">
+                                <h3>Losses:</h3>
+                            </div>
+                        </div>
+                        <div class="row wins">
+                            <div class="col-md-6">
+                                <h3 id="numWins"></h3>
+                            </div>
+                            <div class="col-md-6 losses">
+                                <h3 id="numLosses"></h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h4 class="dream">Click the crystals below:</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div id="crystals">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JAVASCRIPT -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+
+
+    </script> 
+</body>
+
+</html>
