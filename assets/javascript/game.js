@@ -3,6 +3,10 @@ window.onload = function () {
     document.getElementById("my_audio").play();
 };
 
+$("#audio").mouseover(function () {
+    document.getElementById("my_audio").play();
+});
+
 var gameStart = {
     targetNumber: Math.floor(Math.random() * 102) + 19,
     wins: 0,
